@@ -1,0 +1,120 @@
+@mixin date {
+    font-size: 15px;
+    font-style: italic;
+}
+$primary-color : #c61436;
+h1,h2,h3,h4,h5,h6{
+    color: $primary-color;
+}
+.profile-name{
+    color: $primary-color;
+}
+.section-border {
+    border: 3px solid #000;
+    border-left-style: hidden;
+    border-right-style: hidden;
+    text-transform: uppercase;
+    color: $primary-color;
+    font-weight: 600;
+}
+
+.work-exp {
+    list-style-type: none;
+    li{
+        &:before {
+            content: "-";
+            position: absolute;
+            left: 15px;
+            font-weight: 600;
+        }
+    }
+}
+.organization{
+    p{
+        line-height: 1;
+        span{
+            font-size: 14px;
+        }
+    }
+}
+.honor{
+    .loc{
+        font-size: 18px;
+        font-style: italic;
+    }
+}
+.conference{
+    span{
+        .date{
+            font-size: 15px;
+            font-style: italic;
+        }
+    }
+}
+.language{
+    .item{
+        width:50%;
+    }
+}
+.fa{
+    color: $primary-color;
+}
+
+.badge-skill {
+    background-color: $primary-color;
+    border-radius: 5px;
+}
+.experience {
+    .date{
+        @include date;
+    }
+}
+
+.education{
+    .date{
+        @include date;
+    }
+}
+.loader{
+    position: fixed;
+    top: 50%;
+    bottom: 50%;
+    z-index: 9999;
+  }
+  .md-form label {
+    position: absolute;
+    top: 0.65rem;
+    left: 20px;
+    -webkit-transition: .2s ease-out;
+    -o-transition: .2s ease-out;
+    transition: .2s ease-out;
+    cursor: text;
+    color: #757575;
+}
+#app hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid $primary-color !important;
+}
+.md-form input[type=date]:focus:not([readonly]), .md-form input[type=datetime-local]:focus:not([readonly]), .md-form input[type=email]:focus:not([readonly]), .md-form input[type=number]:focus:not([readonly]), .md-form input[type=password]:focus:not([readonly]), .md-form input[type=search-md]:focus:not([readonly]), .md-form input[type=search]:focus:not([readonly]), .md-form input[type=tel]:focus:not([readonly]), .md-form input[type=text]:focus:not([readonly]), .md-form input[type=time]:focus:not([readonly]), .md-form input[type=url]:focus:not([readonly]), .md-form textarea.md-textarea:focus:not([readonly]) {
+    -webkit-box-shadow: 0 1px 0 0 $primary-color !important;
+    box-shadow: 0 1px 0 0 $primary-color !important;
+    border-bottom: 1px solid $primary-color !important;
+}
+.btn-info {
+    background-color: $primary-color !important;
+    color: #fff;
+}
+.form-head-subtitle{
+    font-size: 18px;
+    font-weight: 500;
+}
+.section-header{
+    font-size: 18px !important;
+    text-transform: uppercase !important;
+    font-weight: 500 !important;
+}
+.btn-info{
+    padding: 5px 15px !important;
+}
